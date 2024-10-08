@@ -19,6 +19,9 @@
       <component :is="componentToShow" />
     </KeepAlive>
   </div>
+  <footer>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </footer>
 
 </template>
 
@@ -29,7 +32,7 @@
   import Placeholder from './components/Placeholder.vue';
 
   const items = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-  const showCount = ref(false)
+  const showCount = ref(true)
   const componentToShow = computed(() => {
     if(showCount.value) {
       return Compteur
@@ -66,6 +69,11 @@
         gap: 8px;
         justify-content: center;
       }
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
   }
 </style>
