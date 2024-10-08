@@ -15,7 +15,9 @@
         </li>
       </template>
     </ul>
-    <component :is="componentToShow" />
+    <KeepAlive>
+      <component :is="componentToShow" />
+    </KeepAlive>
   </div>
 
 </template>
