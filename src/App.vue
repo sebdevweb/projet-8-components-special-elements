@@ -32,7 +32,7 @@
   import Placeholder from './components/Placeholder.vue';
 
   const items = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-  const showCount = ref(true)
+  const showCount = ref(false)
   const componentToShow = computed(() => {
     if(showCount.value) {
       return Compteur
@@ -52,6 +52,10 @@
       h1 {
         text-align: center;
       }
+      p {
+        max-width: 700px;
+        margin: 30px auto;
+      }
       label {
         display: flex;
         align-items: center;
@@ -68,12 +72,34 @@
         display: flex;
         gap: 8px;
         justify-content: center;
+        background-color: burlywood;
+        padding: 20px;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        li {
+          font-size: 20px;
+          font-weight: bold;
+        }
       }
     }
     footer {
       position: absolute;
       bottom: 0;
+      left: 0;
       width: 100%;
+      dialog {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      margin-top: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+      border: 2px dashed #fff;
+      color: #fff;
+      font-size: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
     }
   }
 </style>

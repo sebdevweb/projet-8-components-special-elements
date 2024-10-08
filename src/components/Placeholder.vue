@@ -10,6 +10,7 @@
   .container_placeholder {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     p {
       font-size: 20px;
     }
