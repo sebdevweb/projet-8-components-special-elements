@@ -2,3 +2,4 @@
 
 1. Component <template>
 2. Component <component>
+3. Component <KeepAlive>
